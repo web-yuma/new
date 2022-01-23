@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+margin:0;
+background:#D6EFDD;
+}
+
+.header{
+position:fixed;
+top:0;
+left:0;
+display: flex;
+align-items: center;
+width:100%;
+height:80px;
+background:#CCC;
+	z-index: 100;
+	opacity: .8;
+}
+
+.header_title{
+	font-size: 26px;
+	margin-left: 20px;
+}
+
+h2,h3{
+	font-family:"HG正楷書体-PRO";
+	
+}
+
+.top{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 80px;
+	width:100%;
+	height: 400px;
+	background-image:url("image/header.jpeg");
+	background-size: cover;
+}
+
+.top h3{
+	text-align: center;
+	font-size: 25px;
+	line-height: 1.2em;
+	margin-top: -50px;
+	margin-right: 5%;
+	color: white;
+}
+
+.wrap_title{
+	width:85%;
+	height: 50px;
+	background:#f8b9fb;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap{
+	width:95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+}
+
+.wrap-menu{
+	width:55%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrap-menu h2{
+text-shadow:3px 5px 1px #808080;
+}
+
+.wrap-menu p{
+	font-family:"HG正楷書体-PRO";
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+}
+
+.wrap-items{
+	width:90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 50px;
+	background:white;
+	padding: 50px 0px;
+}
+
+.wrap-items:first-child{
+	margin-top:0px;
+	border-radius: 30px 30px 0px 0px;
+}
+
+.wrap-items:last-child{
+	border-radius: 0px 0px 30px 30px;
+}
+
+.wrap-items:nth-child(even){
+	flex-direction: row-reverse;
+}
+
+.wrap-items img{
+	width:400px;
+	height: 280px;
+}
+
+.wrap-menu p{
+	margin-left: 25px;
+}
+
+.wrap-menu p:nth-child(even){
+	margin-right: 10px;
+}
+
+.line{
+background: linear-gradient(transparent 40%,#f77cee 100%);
+}
+
+.slider_wrap{
+	width:85%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(#bfeba4,#c8f0f5,#eec8f5);
+	border-radius:30px;
+	margin-bottom: 50px;
+}
+
+.slider_title{
+	width:100%;
+	border-radius:30px 30px 0px 0px;
+	display: flex;
+	justify-content: center;
+	background:white;
+	margin-bottom: 50px;
+}
+
+.history_title{
+font-family:"HG行書体";	
+}
+
+.slider{
+	width:50%;
+	height: 300px;
+display: flex;
+justify-content: center;
+	margin: auto;
+}
+
+.slider-item img{
+	width:100%;
+	height:280px;
+}
+
+.history_wrap{
+	width:60%;
+	padding: 30px 0px;
+}
+
+.history{
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	color:#514344;
+	font-size: 20px;
+	font-weight: 600;
+	font-family:"HG行書体";
+}
+
+.footer{
+	width:100%;
+	height: 30px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #C0B1B2;
+}
+.footer p{
+	font-weight: 600;
+	font-family:"HG正楷書体-PRO";
+}
+
+
+@media screen and (max-width:768px){
+.wrap-items{
+	width:90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	
+	.wrap-items:nth-child(even){
+	flex-direction:column;
+}
+	
+	.wrap-items img{
+		width:90%;
+	margin-right:0px;
+}
+	
+	.wrap-items:nth-child(even) img{
+	margin-left: 0px;
+}
+	
+	.wrap{
+		width: 100%;
+		margin: auto;
+	}
+	
+	.slider_wrap{
+		width:90%;
+	}
+	
+	.slider{
+	width:100%;
+	height: 300px;
+display: flex;
+justify-content: center;
+	margin: auto;
+
+}
+	
+	
+	.slider-item img{
+	width:100%;
+	height: 250px;
+		object-fit: cover;
+}
+	
+	.top h3{
+		margin-top:-100px;
+	font-size: 20px;
+		letter-spacing: 1px;
+	}
+	
+	.wrap-menu{
+	width:90%;
+	}
+	
+	.wrap-menu h2{
+	width:100%;
+		text-align: center;
+	}
+	
+	.history_wrap{
+	width:80%;
+}
+}
+
+@media screen and (max-width:376px){
+	.wrap-items{
+	width:90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	
+	.wrap-menu{
+		width: 90%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+	
+	.wrap-items img{
+	width:100%;
+	height: 280px;
+	margin-right:0px;
+}
+	
+	.wrap-items:nth-child(even) img{
+	margin-left: 0px;
+}
+	
+	.slider{
+		width:100%;
+	}
+	
+	.slider-item img{
+	width:100%;
+	height:200px;
+}
+}
+
